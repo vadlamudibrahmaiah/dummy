@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Layout</title>
+  <style>
+    body {
+      margin: 100px;
+      font-family: Arial, sans-serif
+    }
+    header, footer {
+      background-color:yellow;
+      color:red;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background-color: black;
+      padding: 1em;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1em;
+    }
+    article {
+      flex: 3;
+      padding: 1em;
+    }
+    aside {
+      flex: 1;
+      padding: 1em;
+      background-color: #e6e6e6;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Web Page</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Main Content</h2>
+      <p>This is the main area of the page.</p>
+    </article>
+    <aside>
+      <h3>Sidebar</h3>
+      <p>Additional info or links go here.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brahmaiah's Layout</p>
+  </footer>
+
+</body>
+</html>
+  
