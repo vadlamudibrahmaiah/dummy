@@ -1,0 +1,11 @@
+1ans
+
+def outer(name):
+  print(name)
+def inner(name):
+  print("inner function",name)
+inner("xyzzz")
+
+outer(inner("xxxxxxxxxx"))
+inner("keerthana")
+outer("charana")
