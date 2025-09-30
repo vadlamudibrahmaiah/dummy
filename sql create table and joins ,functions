@@ -1,0 +1,80 @@
+create table indiaTeam12345(
+playerId Int primary key,
+playername varchar(255),
+iplteam varchar(255),
+batsman varchar(255),
+bowler varchar(255),
+allarounder varchar(255),
+runs int,
+wickets int
+);
+
+select * from indiaTeam12345;
+
+insert into indiaTeam12345(playerId,playername,iplteam,batsman,bowler,allarounder,runs,wickets)
+values
+(1,'vbr','csk','righthand',' rightarm','yes',1200,54),
+(2,'sunny','rcb','righthand','rightarm','no',700,27),
+(3,'gunna','csk','righthand','leftarm','no',500,19),
+(4,'teja','mi','righthand','rightarm','no',400,12);
+
+
+
+
+create table vbr12345(
+playerId int foreign key references indiateam12345(playerId),
+playername varchar(255),
+runs int,
+wickets int
+);
+
+
+select * from vbr12345;
+
+insert into vbr12345(playerId,playername,runs,wickets)
+values
+(1,'nagesh',1500,52),
+(2,'prem',1600,55),
+(3,'venkatesh',1400,50);
+
+
+--joins--
+
+
+select i.runs,i.wickets,v.playername
+from indiateam12345 as i
+join   vbr12345 as v
+on v.playerId=i.playerId;
+
+
+SELECT i.playerId, i.playername, v.playername
+FROM indiaTeam12345 as i
+LEFT JOIN vbr12345 as v
+ON i.playerId = v.playerId
+
+
+SELECT v.playerId, i.playername, v.playername
+FROM indiaTeam12345 i
+RIGHT JOIN vbr12345 v
+ON i.playerId = v.playerId;
+
+
+--functions--
+
+
+select min(runs)
+from vbr12345;
+
+select max(runs)
+from vbr12345;
+
+select sum(runs)
+from vbr12345;
+
+select avg(runs)
+from vbr12345;
+
+select count(runs)
+from vbr12345;
+
+
