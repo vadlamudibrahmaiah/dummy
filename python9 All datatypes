@@ -1,0 +1,237 @@
+1ans
+
+def convert_int(x):
+  print(type(x))
+  print(float(x))
+  print(str(x))
+  print(bool(x))
+  # print(list(x))
+  print(list(str(x)))
+  print(tuple(str(x)))
+  print("DICT",dict({1:x}))
+  print(set(str(x)))
+  print(complex(x))
+
+x=5
+convert_int(x)
+
+
+
+2ans
+
+def convert_float(a):
+  print(type(a))
+  print(int(a))
+  print(str(a))
+  print(bool(a))
+  # print(list(a))
+  print(list(str(a)))
+  print(tuple(str(a)))
+  print(dict,{1:a})
+  print(set(str(a)))
+  print(complex(a))
+
+
+a=5.5
+convert_float(a)
+
+
+
+3ans
+
+def convert_bool(a):
+  print(type(a))
+  print(float(a))
+  print(str(a))
+  print(int(a))
+  # print(list(a))
+  print(list(str(a)))
+  print(tuple(str(a)))
+  print(set(str(a)))
+  print(dict({1:a}))
+  print(complex(a))
+
+
+a=True
+convert_bool(a)
+
+
+
+4ans
+
+def convert_str(a):
+  print(type(a))
+  # print(float(a))
+  # print(int(a))
+  print(bool(a))
+  print(list(str(a)))
+  print(tuple(str(a)))
+  print(set(str(a)))
+  print(dict({1:a}))
+  # print(complex(a))
+
+
+a="vbr"
+convert_str(a)
+
+
+
+5ans
+
+def convert_list(a):
+  print(type(a))
+  # print(float(a))
+  print(str(a))
+  print(bool(a))
+  # print(int(a))
+  print(tuple(str(a)))
+  print(set(str(a)))
+  print(dict({1:a}))
+  # print(complex(a))
+
+
+a=[1,2,3,4,5]
+convert_list(a)
+
+
+
+6ans
+
+def convert_tuple(a):
+  print(type(a))
+  # print(float(a))
+  print(str(a))
+  print(bool(a))
+  print(list(str(a)))
+  # print(int(a))
+  print(set(str(a)))
+  print(dict({1:a}))
+  # print(complex(a))
+
+
+
+a=(1,2,3,4,5)
+convert_tuple(a)
+
+
+
+7ans
+
+def convert_dict(a):
+  print(type(a))
+  # print(float(a))
+  z=str(a)
+  print(type(z))
+  print("String",str(a))
+
+  print(bool(a))
+  print(list(a))
+  print(tuple(a))
+  print(set(a))
+  print(dict({1:a}))
+  # print(complex(a))
+
+a = {"name": "Alice", "age": 30, "city": "New York"}
+convert_dict(a)
+
+
+
+8ans
+
+def convert_int(x, to_type):
+    if to_type == "int":
+        return int(x)
+    elif to_type == "float":
+        return float(x)
+    elif to_type == "str":
+        return str(x)
+    elif to_type == "bool":
+        return bool(x)
+    elif to_type == "list":
+        return list(str(x))
+    elif to_type == "tuple":
+        return tuple(str(x))
+    elif to_type == "dict":
+        return {1: x}
+    elif to_type == "set":
+        return set(str(x))
+    elif to_type == "complex":
+        return complex(x)
+    else:
+        return "Unsupported type"
+
+# Example usage:
+x = 5
+print(convert_int(x,"float"))   # 5.0
+print(convert_int(x, "list"))    # ['5']
+print(convert_int(x, "complex")) # (5+0j)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
