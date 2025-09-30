@@ -1,0 +1,41 @@
+create table sunny1234(
+playerId int,
+playerName varchar(255),
+MostRuns int,
+HighestScores int,
+MostHundreds int,
+MostFifties int,
+MostWickets int,
+BestBowling int,
+Most5WicketsHaul int
+);
+
+select*from sunny1234;
+
+INSERT INTO sunny1234(playerId,playerName,MostRuns,HighestScores,MostHundreds,MostFifties,MostWickets,BestBowling,Most5WicketsHaul)
+VALUES 
+(1,'vbr',1500,94,21,09,02,2-14,1),
+(2,'gunna',1400,78,20,08,01,2-12,0),
+(3,'sunny',1300,75,15,06,00,1-10,2);
+
+
+
+update sunny1234
+set playerId='2'
+where playerName='sunny'
+
+
+DELETE FROM sunny1234
+WHERE playerId = 1;
+
+ALTER TABLE sunny123
+DROP COLUMN MostFifties;
+
+
+DROP TABLE sunny1234;
+
+TRUNCATE TABLE sunny123;
+
+
+
+
