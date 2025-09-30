@@ -1,0 +1,57 @@
+create table vbr123456789(
+id varchar(255),
+department varchar(255),
+salary int
+);
+
+select * from vbr123456789;
+
+insert into vbr123456789
+values
+('E4','IT',70000),
+('E2','IT',60000),
+('E3','IT',50000),
+('E1','IT',50000),
+('E7','HR',55000),
+('E5','HR',45000),
+('E6','HR',45000);
+
+select id,department, Salary,
+       sum(Salary) over (partition by dept_name order by Salary) as total
+from vbr123456789;
+
+select id,department, Salary,
+       sum(Salary) over (partition by id order by Salary) as total
+from vbr123456789;
+
+select id,department, Salary,
+       avg(Salary) over (partition by department order by Salary) as total
+from vbr123456789;
+
+select id,department, Salary,
+       avg(Salary) over (partition by id order by Salary) as total
+from vbr123456789;
+
+select id, department, salary,
+       row_number() over (partition by department order by Salary ) as columnnew
+from vbr123456789;
+
+select id, department, salary,
+       row_number() over (partition by id order by Salary ) as columnnew
+from vbr123456789;
+
+select id, department, Salary,
+       rank() over(partition by department order by Salary ) as rownew
+from vbr123456789;
+
+select id, department, Salary,
+       rank() over(partition by id order by Salary ) as rownew
+from vbr123456789;
+
+select  id, department, Salary,
+       dense_rank() over (partition by  Department order by Salary ) as newcolumn
+from vbr123456789;
+
+select  id, department, Salary,
+       dense_rank() over (partition by  Department order by Salary ) as newcolumn
+from vbr123456789;
