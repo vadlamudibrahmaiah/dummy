@@ -1,0 +1,48 @@
+create table indiaTeam123(
+playerId Int,
+playername varchar(255),
+iplteam varchar(255),
+batsman varchar(255),
+bowler varchar(255),
+allarounder varchar(255),
+runs int,
+wickets int
+);
+
+select * from indiaTeam123;
+
+insert into indiaTeam123(playerId,playername,iplteam,batsman,bowler,allarounder,runs,wickets)
+values
+(1,'vbr','csk','righthand',' rightarm','yes',1200,54),
+(2,'sunny','rcb','righthand','rightarm','no',700,27),
+(3,'gunna','csk','righthand','leftarm','no',500,19);
+
+insert into indiaTeam123(playerId,playername,iplteam,batsman,bowler,allarounder,runs,wickets)
+values
+(4,'teja','mi','righthand','rightarm','no',400,12);
+
+
+
+
+--DDL commands--
+
+
+
+
+update indiateam123
+set allarounder='yes'
+where playerid=3
+
+DELETE FROM indiateam123
+WHERE playerid='4';
+
+TRUNCATE TABLE indiateam123;
+
+DROP TABLE indiateam123;
+
+
+
+
+
+
+
