@@ -1,0 +1,217 @@
+1 ans
+
+loyalty_customers=set()
+loyalty_customers.update([101,102,103])
+print(loyalty_customers)
+loyalty_customers.add(104,)
+print(loyalty_customers)
+loyalty_customers.update([105,106,107,108,109])
+print(loyalty_customers)
+
+
+2ans
+
+loyalty_customers.update([101,102,103,105,106,110,150,200,250])
+loyalty_customers.remove(106)
+print(loyalty_customers)
+loyalty_customers.discard(100)
+print(loyalty_customers)
+loyalty_customers.pop()
+print(loyalty_customers)
+
+print(len(loyalty_customers))
+print(105 in loyalty_customers)
+print(200 not in loyalty_customers)
+
+
+
+3ans
+
+loyalty_customers ={101,102,103,104,105,106,107}
+weekend_visitors ={101,102,110,111}
+#print(loyalty_customers+weekend_visitors)
+print(loyalty_customers|weekend_visitors)
+print(loyalty_customers&weekend_visitors) # if no common elements then output will be empty set
+print(loyalty_customers-weekend_visitors)
+print(loyalty_customers^weekend_visitors)
+
+
+inplace_intersection=loyalty_customers.intersection_update(weekend_visitors)
+print(inplace_intersection)
+print(loyalty_customers)
+
+inplace_difference=loyalty_customers.difference_update(weekend_visitors)
+print(inplace_difference)
+print(loyalty_customers)
+
+
+
+4ans
+
+small_campaign ={104,107}
+loyalty_customers ={101,102,103,104,105,106,107}
+print(small_campaign.issubset(loyalty_customers))
+print(loyalty_customers.issuperset(small_campaign))
+print(small_campaign.isdisjoint(loyalty_customers))
+
+
+
+5ans
+
+loyalty_customers ={101,102,103,104,105,106,107}
+backup=loyalty_customers.copy()
+print(backup)
+
+
+
+6ans
+
+for i in backup:
+  print(i)
+
+
+7ans
+
+dictionary={
+    'emp_id':1001,
+    'name':'alex',
+    'department':'IT'
+}
+print(dictionary)
+
+dictionary['city']='bangalore'
+print("after adding city",dictionary)
+dictionary['city']='hyderabad'
+print("after update city",dictionary)
+
+
+
+8ans
+
+dictionary={
+    'emp_id':1001,
+    'name':'alex',
+    'department':'IT'
+}
+
+print(dictionary.keys())
+print(dictionary.values())
+
+
+not_avaiable=dictionary.get('salary')
+print(not_avaiable)
+
+
+
+
+
+
+dictionary['email']='alex@company.com'
+print(dictionary)
+
+update_dictionary=dictionary.pop('department')
+print(update_dictionary)
+
+dictionary.pop('name')
+print(dictionary)
+
+dictionary.popitem()
+print(dictionary)
+
+
+
+
+9ans
+
+dictionary['name']='alex'
+dictionary['emp_id']=1001
+dictionary['city']='banglore'
+print(dictionary)
+
+
+print(dictionary.keys())
+print(dictionary.values())
+print(dictionary.items())
+
+
+
+10ans
+
+
+employee = {"name": "Ravi", "dept": "IT"}
+
+employee.setdefault("phone", "N/A")
+print("first employee.setdefault:", employee)
+
+
+employee.setdefault("phone", "1234567890")
+print(" second employee.setdefault (no overwrite):", employee)
+
+
+employee.update({"salary": 72000, "city": "Chennai", "project": "AI"})
+print(" update():", employee)
+
+
+employee.update({"city": "Bangalore"})
+print(" update with overwrite:", employee)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
