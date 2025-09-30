@@ -1,0 +1,27 @@
+1ans
+
+print('hello world')
+
+
+2ans
+
+name='welcome to python session python'
+result=name.find('python',12,20)
+index=name.index('python',12)
+count=name.count(' ')
+code=name.startswith('xyz')
+end=name.endswith('pythongrg')
+print(result,index,count,code,end)
+print('python' in name)
+name='welcome#to#pyt#hon#session#python'
+print(name.split('#'))
+split=name.split('#')
+print(''.join(split))
+print(name.replace('abc','xyz'))
+
+
+
+3ans
+
+name='welcome to python session python'
+result=name.find('python',12,20)
