@@ -1,0 +1,75 @@
+1ans 
+
+# functions
+numbers=[1,2,3,4,5,6]
+for i in numbers:
+    print(i**2)
+    print(i**3)
+
+
+2ans
+
+def function1(numbers,x):
+  for i in numbers:
+    print(i**x)
+
+xyz=(function1([1,2,3,4,5,6],7))
+print(xyz)
+
+
+3ans
+
+import builtins
+# get a list of all built-in names
+builtin_names =dir(builtins)
+print("all bulit-in names:")
+print(builtin_names)
+
+
+
+4ans
+
+def create_product(price,name="laptop"):
+     return {"name":name, "price":price}
+product1= create_product("laptop",1200.00)
+product2= create_product(1200.00)
+print(product1)
+print(product2)
+
+
+
+5ans
+
+def create_product(*args):
+    print(args)
+# product1= create_product("laptop",1200.00)
+# product2= create_product(1200.00)
+product3= create_product("hi","hello","namasthe")
+# print(product1)
+# print(product2)
+print(product3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
