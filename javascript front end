@@ -1,0 +1,200 @@
+// console.log("hello")
+
+// // if else
+
+//     let day ="wednesday";
+//     if (day=="monday") {
+//         console.log("start of the day");
+//     }
+//     else if (day=="wednesday"){
+//         console.log("middle of the day");
+//     }
+
+
+//     else (day=="saturday"){
+//     console.log("end of the day");
+//     }
+// switch case
+
+
+// console.log("hello world")
+
+// let a = 10;
+// let b = 20;
+// let operator = "+";
+
+// switch (operator) {
+//     case "+":
+//         console.log("addition", a + b);
+//         break;
+//     case "-":
+//         console.log("subtraction", a - b);
+//         break;
+//     case "*":
+    //     console.log("multiplication", a * b);
+    //     break;
+    // case "/":
+    //     console.log("division", a / b);
+    //     break;
+    // defaul
+    // t:
+    //     console.log("Invalid operator")
+    //     break;
+// }
+
+
+
+// HINT
+//  function anyname(vbr,raja){
+//     // vbr =50
+//     // raja=40
+//     console.log(vbr+raja)
+//     let add = vbr-raja
+//     return vbr+raja+add
+
+//  }
+//     let z= anyname(50,40)
+    // console.log('z',z)
+
+// for loop
+
+    // for(let i=1;i<=10;i++){
+    //     console.log(i)
+    // }   
+
+// while loop
+// let i=0;
+
+// while(i<100){
+//     i++;
+//     console.log(i)
+
+// }
+
+
+// do while loop
+
+// let i=1;
+
+// do{
+//     i++;
+//     console.log(i)
+// }while(i<=10)
+
+
+// factorial of 5
+// let fact=1;
+// for(let i=1;i<=5;i++){
+//     fact=fact*i
+// }
+
+// for(let i=1;i<=100;i++){
+//     console.log(i)
+// }
+
+// for(let i=1;i<=100;i++){
+//     if(i%2===0){
+//         console.log(i+"is even number")
+//     }else{
+//         console.log(i+"is odd number")
+
+//     }
+//     }
+
+
+
+// arrays
+
+// const arr =["apple","banana",25,true,null]
+
+// console.log('arr',arr)
+
+// arr.push("mango")
+
+// arr.shift("apple")
+
+// arr.unshift("mango")
+//  arr.pop("null")
+
+// const arr =[22,5,8,10,15,85,90]
+// arr.sort((a,b)=>a-b)
+
+// console.log(arr)
+
+// const x=arr.slice(1,4)
+
+
+
+
+// objects
+
+// const obj ={
+//     name:"brahmaiah",
+//     location:"hyderabad",
+//     phone:9100359470,
+//     obj :{
+//         grade:"B",
+//         result : {
+//             percentage : 85
+//         }
+//     }
+
+// }
+
+// obj.obj.result.percentage=90
+
+// console.log(obj)
+
+// console.log('val',obj.name)
+// console.log('phone',obj.phone)
+
+// console.log('gr',obj.obj.result.percentage)
+
+
+
+//alert
+
+// alert("anything you want to write")
+
+// confirm("do you want to delete?")
+
+// let val = confirm("do you want to delete?")
+
+// console.log('val',val)
+
+// if(val==true){
+//     alert("user deleted the data!")
+// }
+// else{
+//     alert("user added the data!")
+// }
+
+
+// prompt
+
+// const val1 = prompt("please give value 1?")
+// const val2= prompt("please give value 2?")
+// const op = prompt("please give operator?")
+
+// function calculator(vaule1,value2,operator){
+    
+    
+//      if(operator=="-"){
+//         console.log(vaule1-value2)
+//     }
+//     else if(operator=="*"){
+//         console.log(vaule1*value2)
+//     }
+//     else if(operator=="/"){
+//         console.log(vaule1/value2)
+//     }
+//     else if(operator=="+"){
+//         console.log(vaule1+value2)
+//     }
+    
+//     }
+// calculator(val1,val2,op)
+
+// console.log(val)
+
+
