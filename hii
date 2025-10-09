@@ -1,0 +1,403 @@
+create database batch3;
+
+use batch3;
+ 
+create table singers(
+ 
+singer_id int primary key,
+
+name varchar(50),
+
+age int
+
+);
+ 
+ 
+insert into singers
+
+values
+
+(1, 'renuka', 20),
+
+(2, 'prasanna', 20),
+
+(3, 'yoga', 22);
+ 
+select * from singers;
+
+create table songs(
+
+singer_id int primary key,
+
+song_id int,
+
+release_year int,
+
+moviename varchar(50),
+
+foreign key(singer_id) references singers(singer_id)
+
+);
+ 
+ 
+insert into songs
+
+values
+
+(1, 101,2004, 'titanic'),
+
+(2,202,2007, 'anthariksham'),
+
+(3,302,2024, 'Bhahubhali');
+ 
+select * from songs;
+ 
+#DDL(Data definition language)
+ 
+alter table singers
+
+add column type varchar(100);
+ 
+alter table singers
+
+modify column type varchar(150);
+ 
+alter table singers
+
+drop column type;
+ 
+truncate table singers;
+ 
+rename table singers to singers1;
+ 
+# DML(Data manipulation language)
+
+#insert,update,delete
+ 
+update singers1
+
+set name="laya"
+
+where singer_id=1;
+ 
+delete from songs
+
+where singer_id=3;
+ 
+create table employees(
+
+emp_id int primary key,
+
+emp_name varchar(50),
+
+department varchar(100),
+
+salary int
+
+);
+ 
+insert into employees
+
+values
+
+(00, 'mani', 'HR', 30000),
+
+(11, 'grace', 'IT', 40000),
+
+(22, 'teja', 'Finance', 50000),
+
+(33, 'neha', 'developer', 60000);
+ 
+select * from employees;
+ 
+#operators
+
+select emp_name,salary,salary + 1000 result from employees;
+
+select emp_name,salary,salary - 500 newresult from employees;
+
+select emp_name,salary,salary*3 mresult from employees;
+
+select emp_name,salary,salary/2 dresult from employees;
+
+select * from employees where salary > 30000;
+
+select * from employees where department= 'IT' and salary > 25000;
+
+select * from employees where department= 'digital' or salary > 30000;
+
+select * from employees where not department= 'marketing';
+
+select * from employees where not department= 'HR';
+ 
+#Functions
+
+#1. string functions
+
+select upper('datavalley');
+
+select lower('DATAVALLEY');
+
+select length('datavalley');
+
+select concat('birth','day');
+
+select substring('language',2,5);
+
+select ltrim(' date ');
+
+select rtrim(' date ');
+ 
+#2.Numeric functions
+ 
+select abs(-10);
+
+select round(12.56,2);
+
+select floor(12.3);
+
+select ceil(12.3);
+
+select power(2,3);
+
+#3. Date functions
+
+select now();
+
+select curdate();
+
+select curtime();
+
+select year('2025-09-7');
+
+select month('2025-09-7');
+
+select day('2025-09-7');
+
+select monthname('2025-09-7');
+
+select dayname('2025-09-7');
+
+select date_add('2024-05-13',interval 2 month);
+
+select date_add('2024-05-13',interval 2 day);
+
+select date_add('2024-05-13',interval 2 year);
+
+select datediff('2026-05-13','2025-07-10');
+ 
+#Aggregate functions
+ 
+select count(*) from employees; 
+
+select max(salary) from employees;
+
+select min(salary) from employees;
+
+select sum(salary) from employees;
+
+select avg(salary) from employees;
+ 
+#groupBy
+ 
+select department, count(*)
+
+from employees
+
+group by department;
+ 
+select department, avg(salary)
+
+from employees
+
+group by department
+
+having avg(salary) > 20000;
+ 
+select department, sum(salary)
+
+from employees
+
+group by department
+
+having sum(salary)<60000;
+ 
+#Joins
+
+create table detailss(
+
+emp_id varchar(50) primary key,
+
+emp_name varchar(100),
+
+dept_id varchar(50),
+
+age int);
+ 
+insert into detailss
+
+values
+
+('D1', 'sushma','A1',12),
+
+('D2', 'manideeep','B1', 20),
+
+('D3', 'sandeep','C1', 22),
+
+('D4', 'chandu','D1', 21);
+ 
+select * from details;
+ 
+create table records1(
+
+dept_id varchar(50),
+
+dept_name varchar(50),
+
+salary int
+
+);
+ 
+insert into records1
+
+values
+
+('A1', 'IT', 12),
+
+('B1', 'IT', 20),
+
+('C1', 'HR', 22),
+
+('D1', 'Finance', 21),
+
+('E1', 'Marketing', 20),
+
+('F1', 'digital', 22);
+
+select * from records1;
+ 
+select d.emp_id,d.emp_name, d.dept_id,r1.dept_name
+
+from detailss d
+
+inner join records1 r1
+
+on d.dept_id=r1.dept_id;
+ 
+select d.emp_id,d.emp_name,r1.dept_name
+
+from detailss d
+
+left join records1 r1
+
+on d.dept_id=r1.dept_id;
+ 
+select d.emp_id,d.emp_name,r1.dept_name
+
+from detailss d
+
+right  join records1 r1
+
+on d.dept_id=r1.dept_id;
+ 
+ 
+select d.emp_id,d.emp_name,r1.dept_name
+
+from detailss d
+
+cross join records1 r1
+
+on d.dept_id=r1.dept_id;
+ 
+ 
+select d.emp_id,d.emp_name,dept_id,r1.dept_name
+
+from detailss d
+
+natural join records1 r1;
+ 
+#Aggregate functions
+
+#sum,avg,count,min,max---
+ 
+select sum(salary) from employees;
+
+select count(*) from employees;
+
+select avg(salary) from employees;
+
+select max(salary) from employees;
+
+select min(salary) from employees;
+ 
+#window functons
+ 
+create table windowfunction3(
+
+emp_name varchar(100),
+
+dept_name varchar(50),
+
+age int,
+
+salary int
+
+);
+ 
+insert into windowfunction3
+
+values
+
+('A', 'IT', 23, 20000),
+
+('B', 'IT', 22, 60000),
+
+('C', 'IT', 21, 60000),
+
+('D', 'HR', 20, 50000),
+
+('E', 'HR', 22, 30000),
+
+('F', 'HR', 22, 30000),
+
+('G', 'Finance', 24, 90000),
+
+('H', 'Finance', 21, 90000),
+
+('I', 'Finance', 22, 70000),
+
+('J', 'Finance', 22, 80000);
+ 
+select * from windowfunction3;
+ 
+select emp_name,dept_name,salary,
+
+sum(salary) over (partition by dept_name order by salary rows between unbounded preceding and unbounded following ) as total
+
+from windowfunction3;
+ 
+select emp_name,dept_name,salary,
+
+avg(salary) over (partition by dept_name order by salary rows between unbounded preceding and unbounded following) as avgsalary
+
+from windowfunction3;
+ 
+select emp_name,dept_name,salary,
+
+row_number() over (partition by dept_name order by salary) as rownumber
+
+from windowfunction3;
+ 
+select emp_name,dept_name,salary,
+
+rank() over (partition by dept_name order by salary) as rankcolumn
+
+from windowfunction3;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
