@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right,yellow,red);
+      color: brown;
+    }
+    header {
+      background-color:yellow;
+      color: black;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background-color:brown;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: yellow;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+  
+    }
+    footer {
+      background-color: blue;
+      color: yellow;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+   header {
+      background-color:blue;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .logo{
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+    margin-left: 50px;
+    float: center;
+    object-fit: cover;
+  }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Masters Junior College Darsi</h1>
+    <p>Created with ❤️ by Brahmaiah</p>
+  </header>
+
+  <nav>
+    <a href="#">Your journey to success begins here</a>
+    
+  </nav>
+
+  <main>
+  
+  <h1>BUILding a Brighter Future</h1>
+  <p>Welcome to the official website of Masters Junior College, Darsi — where excellence in education meets a nurturing environment designed to help every student thrive.</p>
+  <p>Our dedicated faculty and staff are committed to supporting each learner with the guidance, resources, and encouragement they need to succeed both academically and personally.
+At Masters Junior College, we believe education is a powerful force that can transform lives and uplift communities. Our well-rounded curriculum is thoughtfully crafted to prepare students for their future—whether they pursue higher studies or step confidently into the professional world.
+We invite you to explore our website and discover more about our academic programs, passionate educators, and the vibrant community that makes Masters Junior College, Darsi a truly inspiring place to learn and grow.
+Together, were shaping a brighter future for our students and the society we proudly serve.
+
+Would you like help turning this into a homepage layout or adding visual elements like banners or festive graphics for Independence Day?
+</p>
+  
+<p>We invite you to explore our website and discover more about our academic programs, passionate educators, and the vibrant community that makes Masters Junior College, Darsi a truly inspiring place to learn and grow.
+Together, were shaping a brighter future for our students and the society we proudly serve.
+</p>
+  <img src="/collage (1).png" alt="college name" class="logo">
+
+<footer>
+    &copy; 2025 Brahmaiah | Contacts:9912283245
+  </footer>
+
+</body>
+</html>

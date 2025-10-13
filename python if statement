@@ -1,0 +1,5 @@
+username="admin"
+password="123"
+if username == "admin" and password == "123":
+  print("login sucessful")
+  print("invaild credentials")

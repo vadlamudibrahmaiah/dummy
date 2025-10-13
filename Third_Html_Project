@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>vbr</h1>
+    <h2>vbr</h2>
+    <h3>vbr</h3>
+    <h4>vbr</h4>
+    <h5>vbr</h5>
+    <h6>vbr</h6>
+    <p><b> brahmaiah</b> <i>hello</i> <u>hii</u></p>
+    <ol type="A">
+        <li>brahmaiah</li>
+        <li>sunny</li>
+        <li>gunnu</li>
+    </ol>
+    <ul type="square">
+        <li>brahmaiah</li>
+        <li>sunny</li>
+        <li>gunnu</li>
+    </ul>
+    <img src="c:\Users\91910\Pictures\Saved Pictures\IMG20250506181038.jpg" length="100px" width="100px">
+    <video src="c:\Users\91910\Pictures\Saved Pictures\VID20250510091623.mp4" controls></video>
+    <table>
+        <thead>
+            <tr>
+                <td>sno</td>
+                <td>college name</td>
+                <td>area</td>
+            </tr>
+        </thead>
+    </table>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>masters</td>
+            <td>darsi</td>
+        </tr>
+        
+    </tbody>
+    <form>
+        <fieldset>
+            <legend>sign up</legend>
+        <label>name:</label>
+        <input type="text" id="name" placeholder="write your name"><br><br>
+        <label>gmail:</label>
+        <input type="email" placeholder="enter your email">
+    
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+username="vbr"
+password="9100"
+if username == "vbr" and password == "9100":
+   print("login sucessful")
+else:
+   print("invaild credentials")
+
+
+
+num1 = 20
+num2 = 23
+operator = "*"
+result=num1 * num2
+if operator == "+":
+   print(result)
+elif operator == "-":
+   print(result)
+elif operator == "*":
+   print(result)
+elif operator == "/":
+   print(result)
+else:
+   print("wrong operator")
+
+
+
+

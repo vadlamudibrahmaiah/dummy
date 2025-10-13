@@ -1,0 +1,157 @@
+1ans
+
+my_tuple =(1,'a',3.14);
+print(len(my_tuple));
+
+
+2ans
+
+pythonbookings =("hatchback","sedan","suv","suv","sedan")
+print(len(pythonbookings));
+
+
+3ans
+
+pythonbookings = ("suv", "sedan", "suv", "hatchback", "suv", "sedan")
+
+count_suv = pythonbookings.count("suv")
+print("SUV was booked", count_suv, "times")
+
+
+4ans
+
+pythonbookings = ("suv", "sedan", "hatchback", "suv","sedan")
+print(pythonbookings.index("sedan"))
+
+
+5ans
+
+pythonbookings = ["suv", "sedan", "suv", "hatchback", "suv", "sedan"]
+
+subset = tuple(pythonbookings[1:5])
+
+
+6ans
+
+pythonbookings = ["suv", "sedan", "suv", "hatchback", "suv", "sedan"]
+
+first_booking, second_booking = pythonbookings[0], pythonbookings[1]
+
+print(first_booking)
+print(second_booking)
+
+
+7ans
+
+pythonscore_list = [87, 92, 76, 81, 95, 68]
+
+
+scores = tuple(pythonscore_list)
+
+print("Total number of exams:", len(scores))
+
+
+print("Sum of scores:", sum(scores))
+print("Minimum score:", min(scores))
+print("Maximum score:", max(scores))
+
+
+print("Sorted scores:", sorted(scores))
+
+
+8ans
+
+a=[]
+print(type(a))
+b=()
+print(type(b))
+
+c={}
+print(type(c))
+
+x=set()
+print(type(x))
+
+
+9ans
+
+x=set()
+x.add(7)
+print([0])
+
+
+10ans
+
+my_dict = {'name': 'alice', 'age':30}
+# print(my_dict[0])
+# print(my_dict(name))
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.items())
+print(my_dict['name'])
+
+
+11ans
+
+A = {1, 2, 3, 4,5,6,8,9,11}
+B = {3, 4, 5, 6,1,2,7,10,9}
+
+print(A | B)   # Union → {1, 2, 3, 4, 5, 6}
+print(A & B)   # Intersection → {3, 4}
+print(B - A)   # Difference → {1, 2}
+print(A ^ B)   # Symmetric Difference → {1, 2, 5, 6}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print(subset)
